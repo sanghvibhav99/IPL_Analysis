@@ -75,8 +75,7 @@ streamlit run ipl_dashboard.py
 ---
 
 ## 📸 Dashboard Preview
-
-_Add screenshots of your dashboard here._
+<img width="1359" height="625" alt="image" src="https://github.com/user-attachments/assets/2f418ddc-97c6-40d0-a253-657e59db51a6" />
 
 ---
 
