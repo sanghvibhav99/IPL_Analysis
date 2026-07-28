@@ -99,7 +99,6 @@ IPL_Analysis/
 │
 ├── ipl_dashboard.py
 ├── IPL Matches 2008-2020.csv
-├── requirements.txt
 ├── README.md
 ├── .gitignore
 └── .streamlit/
