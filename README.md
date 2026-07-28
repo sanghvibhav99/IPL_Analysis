@@ -13,7 +13,7 @@ An interactive IPL Team Analysis Dashboard built using **Python, Pandas, Matplot
 - 🏏 Win percentage when batting first
 - 🧤 Win percentage when bowling first
 - 📉 Average winning margin over the years
-- 📅 Wins per season visualization
+- 📅 Win Percentage per season visualization
 - 🥧 Toss decision distribution (Bat vs Field)
 - 🎨 Clean and interactive Streamlit interface
 
