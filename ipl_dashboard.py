@@ -7,7 +7,7 @@ import streamlit as st
 
 
 # Cleaning & Processing
-temp = pd.read_csv('/Users/bhavsanghvi/Engineering/Projects/IPL_Analysis/IPL Matches 2008-2020.csv')
+temp = pd.read_csv('IPL Matches 2008-2020.csv')
 temp['date'] = pd.to_datetime(temp['date'])
 temp['year'] = temp['date'].dt.year
 temp['month'] = temp['date'].dt.month
