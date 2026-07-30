@@ -62,6 +62,20 @@ IPL_Analysis/
 └── .gitignore
 ```
 
+## Dashboard Preview
+
+### Team Analysis
+![Team Analysis](Projects/IPL_Analysis/image/image1.png)
+
+### Team Winning Percentage
+![Bowling Analysis](Projects/IPL_Analysis/image/image2.png)
+
+### Player Batting Analysis
+![Batting Analysis](Projects/IPL_Analysis/image/image3.png)
+
+### Player Bowling Analysis
+![Bowling Analysis](Projects/IPL_Analysis/image/image4.png)
+
 ## Installation
 
 Clone the repository

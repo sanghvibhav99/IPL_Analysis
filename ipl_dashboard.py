@@ -111,9 +111,9 @@ with team_tab:
     # Divider
     st.divider()
 
-    # WIN 5 PER SEASON - GRAPH
+    # WIN % PER SEASON - GRAPH
     t = team_df[team_df['winner'] == team].groupby('year')['year'].count() * 100 / team_df[(team_df['team1'] == team) | (team_df['team2'] == team)].groupby('year')['year'].count()
-    fig , ax = plt.subplots(figsize=(6,4))
+    fig , ax = plt.subplots(figsize=(5,3))
     ax.bar(t.index,t.values)
     ax.set_xlabel('Year',color='white')
     ax.set_ylabel('Wins',color='white')
@@ -122,7 +122,7 @@ with team_tab:
     ax.tick_params(axis='y', colors='white',labelsize=8) 
     fig.patch.set_alpha(0)
     ax.set_facecolor("none")
-    st.pyplot(fig,transparent=True)
+    st.pyplot(fig,transparent=True,use_container_width=True)
 
 with player_tab:
     players = sorted(set(m['batsman'].dropna()).union(set(m['bowler'].dropna())).union(set(m['fielder'].dropna())))
