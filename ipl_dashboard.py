@@ -7,11 +7,8 @@ import streamlit as st
 
 
 # Cleaning & Processing
-
-temp = pd.read_csv('IPL Matches 2008-2020.csv')
-
-m = pd.read_csv('/Users/bhavsanghvi/Engineering/Projects/IPL_Analysis/deliveries.csv')
-temp = pd.read_csv('/Users/bhavsanghvi/Engineering/Projects/IPL_Analysis/IPL Matches 2008-2020.csv')
+m = pd.read_csv("deliveries.csv")
+temp = pd.read_csv("IPL Matches 2008-2020.csv")
 
 temp['date'] = pd.to_datetime(temp['date'])
 temp['year'] = temp['date'].dt.year
@@ -157,20 +154,6 @@ with player_tab:
     bowl_avg = round(runs_conceded/wickets,2) if wickets else 0
     balls_wicket = round(balls/wickets,2) if wickets else 0
     dots = bowl[bowl['total_runs'] == 0].shape[0]
-
-
-    # WIN 5 PER SEASON - GRAPH
-    t = team_df[team_df['winner'] == team].groupby('year')['year'].count() * 100 / team_df[(team_df['team1'] == team) | (team_df['team2'] == team)].groupby('year')['year'].count()
-    fig , ax = plt.subplots(figsize=(6,4))
-    ax.bar(t.index,t.values)
-    ax.set_xlabel('Year',color='white')
-    ax.set_ylabel('Wins',color='white')
-    ax.set_title('Win % per Season',color='white',fontsize=14)
-    ax.tick_params(axis='x', colors='white',labelsize=8)
-    ax.tick_params(axis='y', colors='white',labelsize=8) 
-    fig.patch.set_alpha(0)
-    ax.set_facecolor("none")
-    st.pyplot(fig,transparent=True)
 
     # FIELDING INFO
     field = m[m['fielder'] == player]
