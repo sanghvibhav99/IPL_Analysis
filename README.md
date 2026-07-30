@@ -1,117 +1,112 @@
-# 🏏 IPL Team Analysis Dashboard
+# 🏏 IPL Analytics Dashboard
 
-An interactive IPL Team Analysis Dashboard built using **Python, Pandas, Matplotlib, and Streamlit**. The dashboard enables users to explore team-wise performance, visualize historical trends, and analyze key match statistics from the IPL (2008–2020).
+An interactive IPL Analytics Dashboard built using **Python**, **Streamlit**, **Pandas**, and **Matplotlib** to analyze IPL data from 2008–2020.
 
----
+## Features
 
-## 📌 Features
+### 🏟️ Team Analysis
+- Overall matches, wins, losses and win percentage
+- Toss decision analysis
+- Win percentage by season
+- Average win margin by year
+- Toss impact statistics
+- Bat-first vs Field-first performance
 
-- 📊 Team-wise dashboard
-- 📈 Win percentage and overall performance
-- 🥇 Total matches, wins and losses
-- 🪙 Toss winning percentage
-- 🏏 Win percentage when batting first
-- 🧤 Win percentage when bowling first
-- 📉 Average winning margin over the years
-- 📅 Win Percentage per season visualization
-- 🥧 Toss decision distribution (Bat vs Field)
-- 🎨 Clean and interactive Streamlit interface
+### 👤 Player Analysis
 
----
+#### Batting
+- Runs
+- Average
+- Strike Rate
+- Fours & Sixes
+- Phase-wise analysis
+  - Powerplay
+  - Middle Overs
+  - Death Overs
+- Rolling Runs graph
+- Rolling Strike Rate graph
 
-## 🛠 Tech Stack
+#### Bowling
+- Wickets
+- Overs
+- Bowling Average
+- Economy
+- Balls per Wicket
+- Dot Balls
+- Phase-wise analysis
+- Rolling Economy graph
+- Rolling Bowling Average graph
+
+## Tech Stack
 
 - Python
+- Streamlit
 - Pandas
 - NumPy
 - Matplotlib
-- Streamlit
 
----
+## Dataset
 
-## 📂 Dataset
+- IPL Deliveries Dataset
+- IPL Matches Dataset (2008–2020)
 
-**IPL Matches Dataset (2008–2020)**
-
-Contains:
-- Match details
-- Teams
-- Winner
-- Toss winner
-- Toss decision
-- Venue
-- Winning margin
-- Player of the Match
-- Match date
-
----
-
-## 🚀 Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/sanghvibhav99/IPL_Analysis.git
-```
-
-Move into the project directory
-
-```bash
-cd IPL_Analysis
-```
-
-Install the required packages
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the Streamlit app
-
-```bash
-streamlit run ipl_dashboard.py
-```
-
----
-
-## 📸 Dashboard Preview
-<img width="1359" height="625" alt="image" src="https://github.com/user-attachments/assets/2f418ddc-97c6-40d0-a253-657e59db51a6" />
-
----
-
-## 📈 Future Improvements
-
-- Head-to-head comparison between teams
-- Venue-wise performance analysis
-- Opponent analysis
-- Player of the Match statistics
-- Home vs Away analysis
-- Download dashboard reports
-- Interactive filters and advanced visualizations
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 IPL_Analysis/
 │
 ├── ipl_dashboard.py
+├── deliveries.csv
 ├── IPL Matches 2008-2020.csv
 ├── README.md
-├── .gitignore
-└── .streamlit/
+└── .gitignore
 ```
 
----
+## Installation
 
-## 👨‍💻 Author
+Clone the repository
+
+```bash
+git clone https://github.com/sanghvibhav99/IPL_Analysis.git
+cd IPL_Analysis
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the dashboard
+
+```bash
+streamlit run ipl_dashboard.py
+```
+
+## Current Version
+
+**v1.0**
+
+### Completed
+- Team Analytics
+- Player Analytics
+- Batting Dashboard
+- Bowling Dashboard
+- Phase-wise Analysis
+- Rolling Performance Visualizations
+
+### Planned (v2)
+- Head-to-head player comparison
+- Venue-wise statistics
+- Opposition-wise analysis
+- Season filters
+- Interactive charts (Plotly)
+- Team logos
+- Advanced fielding statistics
+- Deployment on Streamlit Cloud
+
+## Author
 
 **Bhav Sanghvi**
 
-- GitHub: https://github.com/sanghvibhav99
-- LinkedIn: https://www.linkedin.com/in/bhav-sanghvi/
-
----
-
-## ⭐ If you found this project useful, consider giving it a star!
+GitHub: https://github.com/sanghvibhav99
